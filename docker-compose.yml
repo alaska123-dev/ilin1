@@ -1,0 +1,39 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD}
+    volumes:
+      - mssql-data:/var/opt/mssql
+      - /opt/backups/mssql:/var/opt/mssql/backup
+    networks:
+      - is-net
+    restart: unless-stopped
+
+  app:
+    image: ghcr.io/alaska123-dev/ilin1:d64b57c619e236b0156d05ee4919f8e57921f007
+    container_name: isapp
+    environment:
+      ASPNETCORE_URLS: "http://0.0.0.0:8080"
+      ConnectionStrings__Mssql: "Server=mssql,1433;Database=IsLabDb;User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True;"
+      App__Name: "ilin1"
+      App__Version: "2.0.0"
+    ports:
+      - "127.0.0.1:5000:8080"
+    networks:
+      - is-net
+    depends_on:
+      - mssql
+    restart: unless-stopped
+
+volumes:
+  mssql-data:
+    external: true
+    name: mssql-data
+
+networks:
+  is-net:
+    external: true
+    name: is-net
