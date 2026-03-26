@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cronp\\Desktop\\ilin1\\ilin1\\ilin1.csproj": {}
+    "/home/ilin/is-labs/is-labs/ilin1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cronp\\Desktop\\ilin1\\ilin1\\ilin1.csproj": {
+    "/home/ilin/is-labs/is-labs/ilin1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cronp\\Desktop\\ilin1\\ilin1\\ilin1.csproj",
+        "projectUniqueName": "/home/ilin/is-labs/is-labs/ilin1.csproj",
         "projectName": "ilin1",
-        "projectPath": "C:\\Users\\cronp\\Desktop\\ilin1\\ilin1\\ilin1.csproj",
-        "packagesPath": "C:\\Users\\cronp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cronp\\Desktop\\ilin1\\ilin1\\obj\\",
+        "projectPath": "/home/ilin/is-labs/is-labs/ilin1.csproj",
+        "packagesPath": "/home/ilin/.nuget/packages/",
+        "outputPath": "/home/ilin/is-labs/is-labs/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\cronp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/ilin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,13 +32,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -56,7 +44,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[10.1.6, )"
             }
           },
           "imports": [
@@ -78,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

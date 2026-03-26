@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"ZqQHYsbyJSdhYE6oM1AW/xuPCyYj2TVS/QH3qUj8EAI=","Source":"ilin1","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "TaPBBerHFbTaI1ZGFZjFkH1QXDOkwdrBv9YDZQ95hWo=",
+  "Source": "ilin1",
+  "BasePath": "_content/ilin1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
